@@ -52,7 +52,7 @@ public class AirportTest {
             public void testEconomyFlightRegularPassenger() {
                 assertAll("Verify all conditions for a regular passenger and an economy flight",
                         () -> assertEquals("1", economyFlight.getId()),
-                        () -> assertEquals(true, economyFlight.addPassenger(mike)),
+                        () -> assertEquals(false, economyFlight.addPassenger(mike)),
                         () -> assertEquals(1, economyFlight.getPassengersSet().size()),
                         () -> assertEquals("Mike", new ArrayList<>(economyFlight.getPassengersSet()).get(0).getName()),
                         () -> assertEquals(true, economyFlight.removePassenger(mike)),
