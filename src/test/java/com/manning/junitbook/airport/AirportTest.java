@@ -46,7 +46,7 @@ public class AirportTest {
         @Nested
         @DisplayName("When we have a regular passenger")
         class RegularPassenger {
-
+            /*
             @Test
             @DisplayName("Then you can add and remove him from an economy flight")
             public void testEconomyFlightRegularPassenger() {
@@ -59,7 +59,7 @@ public class AirportTest {
                         () -> assertEquals(1, economyFlight.getPassengersSet().size())
                 );
             }
-
+            */
             @DisplayName("Then you cannot add him to an economy flight more than once")
             @RepeatedTest(5)
             public void testEconomyFlightRegularPassengerAddedOnlyOnce(RepetitionInfo repetitionInfo) {
